@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+* {
+  font-family: "Hubballi", sans-serif;
+  color: #3e3e3e;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.list__item > label {
+  padding-left: 8px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.list > span {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.scratched {
+  text-decoration: line-through;
+}
+
+.todo {
+  margin: 100px auto;
+  width: 320px;
+  padding: 32px;
+}
+
+.todo__input {
+  width: 320px;
+  margin-bottom: 16px;
+  outline: 0;
+  border-width: 0 0 1px;
+  font-size: 1.25rem;
+}
