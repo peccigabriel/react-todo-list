@@ -25,15 +25,15 @@ export function App() {
   };
 
   const removeListItem = (position) => {
-    let checkedPositionFalse = checkedState;
-
     const removedListItem = list.filter((item, index) =>
       index !== position ? item : null,
     );
 
-    checkedPositionFalse[position] = false;
+    const removedCheckedListItem = checkedState.filter(
+      (item, index) => index !== position,
+    );
 
-    setCheckedState(checkedPositionFalse);
+    setCheckedState(removedCheckedListItem);
     setList(removedListItem);
   };
 
