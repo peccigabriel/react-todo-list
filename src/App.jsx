@@ -71,7 +71,6 @@ export function App() {
         onChange={(e) => setText(e.target.value)}
         onKeyPress={(event) => enterKeyPress(event)}
       />
-      {!list.length ? newListItem(initialLabel, 0) : null}
       {list.map((itemList, index) => newListItem(itemList, index))}
     </div>
   );
