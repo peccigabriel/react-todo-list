@@ -6,8 +6,6 @@ export function App() {
   const [text, setText] = React.useState("");
   const [checkedState, setCheckedState] = React.useState([]);
 
-  let initialLabel = "Adicione um novo item :)";
-
   const enterKeyPress = (event) => {
     const { charCode, target } = event;
     if (charCode === 13) {
